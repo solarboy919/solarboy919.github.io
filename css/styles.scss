@@ -1,0 +1,600 @@
+$v-color1: #a9d1e3;
+$v-color2:#183b65;
+$v-color3:#b6bcbf;
+$v-color4:#55636c;
+$v-color5:#006f9d;
+$v-text: 'Times New Roman', Times, serif;
+
+
+
+
+img{
+    width:100%;
+}
+
+
+//mobile nav code
+
+label{
+    display:inline-block;
+    margin: 20px;
+    //outline:1px dotted red;
+}
+
+
+header input[type=checkbox]{
+     
+    display: none;
+
+    & ~ label #m-open {//transitions need anything but display
+        display:block;
+    }
+    & ~ label #m-shut{//transitions need anything but display
+        display:none;
+    }
+    
+    & ~ nav{
+        display: none;
+    }
+    &:checked ~ nav{
+        display: flex;
+    }
+
+    &:checked {
+        & ~ label #m-open {//transitions need anything but display
+            display:none;
+        }
+        & ~ label #m-shut{//transitions need anything but display
+            display:block;
+        }
+    }
+}
+//header #show-menu, header input[type=checkbox]{ display:none;}
+
+//header input[type=checkbox] ~ nav{ display:none;}
+
+
+a:link, a:active, a:visited {
+    text-align: center;
+    color: $v-color2;
+    display: block;
+    background-color:$v-color1;
+    transition: color .5s ease 0s;
+    padding: 10%;
+    cursor: pointer;
+    text-decoration: none;/*removes underline*/
+}
+a:hover {
+    background-color: $v-color2;
+    color:#fff;
+}
+
+
+//end of mobile nav code
+
+
+body{
+    max-width:960px;
+    margin:1% auto;
+    background-color: #fff;
+  }
+
+html{
+    background-color: rgb(87, 87, 87);
+}
+.photo-of-me{
+    max-width: 200px;
+    margin:2% 30%;
+    padding-bottom: 15%;
+}
+.logo{
+    max-width: 450px;
+    display: inline-block;
+}
+
+
+#desktop-nav{
+    display:none;
+}
+.feature-img img{
+    max-width: 300px;
+    display: inline-block;
+    margin:2% 20%;
+    padding:20% 0
+}
+
+
+
+//about me mobile coding
+h1{
+    line-height: 1em;
+    font-size: 3em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding:8% 2% 5% 2%
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.5em;
+    padding:2% 5% 8% 5%;
+}
+//about me mobile coding ending
+
+h2{
+    line-height: 1em;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding:8% 0 8% 0;
+    background-color:$v-color1;
+    color:$v-color2;
+    margin-bottom: 6%;
+}
+
+
+//contactinformation
+footer{
+    background-color:$v-color3;
+    padding:6% 2% 2% 2%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1em;
+    color:#fff;
+}
+footer p{
+    padding:2%;
+}
+h3{
+    color:#fff;
+    font-size: 1.5em;
+    font-family:'Times New Roman', Times, serif;
+    padding-bottom: 4%;
+    padding-left: 2%;
+    margin-top: 15%;
+}
+h6{
+    font-size: .6em;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:15% 0 8% 0;
+    
+}
+//end of contact info coding-----
+
+
+//mobile coding for resume------------------------
+.resume{
+    font-size: 1.5em;
+    padding: 4% 2% 2% 2%;
+    background-color:#fff;
+    color:$v-color2;
+    margin-top: 2%;
+}
+ul .resume-list {
+    list-style: circle inside none;
+    padding:0 6%;
+    margin-top:-5%;
+    margin-bottom:7%;
+    //list-style-position: outside; /* default */
+  }
+li .resume-list{
+    padding: 10px 0;
+}
+.resume-link{
+    margin: 30% 0;
+}
+//mobile end of resume coding---------------------
+
+
+
+//mobile design work coding-----------------------
+.design-work{
+    margin-top: 20%;
+}
+.design-intro{
+    margin:15% 0;
+    border-bottom: $v-color1 30px solid;
+}
+div h3{
+    color:$v-color2;
+    margin: 5% 0 15% 0;
+    text-align: center;
+}
+.design-img{
+    max-width: 300px;
+    width:100%;
+    margin:0 20%; 
+}
+.design-img2{
+    max-width: 300px;
+    width:100%;
+    margin:0 20%; 
+}
+.design-img3{
+    max-width: 300px;
+    width:100%;
+    margin:0 20%; 
+}
+.design-p {
+    padding:-500px 4%;
+    margin-bottom: 12%;
+    border-bottom: $v-color2 6px solid;
+}
+//mobile design work coding-----------------------
+
+
+//mobile physical artwork coding--------------------
+
+
+
+#harry-drawing{
+    padding: 20% 0;
+}
+.physical-img{
+    max-width: 300px;
+    width:100%;
+    margin:0 20%;
+    padding:10px 0;
+}
+.artwork{
+    background-color: $v-color2;
+    color:#fff;
+    margin-top: 20%;
+}
+.photo-img{
+    max-width: 300px;
+    width:100%;
+    margin:0 20%;
+    padding:15% 0;
+}
+
+//mobile physical artwork end of coding------------------
+
+
+
+
+//------------------------------------------------------
+@media screen and (min-width:540px){
+
+label{
+    display: none;
+    }
+#mobile-nav{
+    display: none;
+}
+
+
+
+
+//desktop nav styles--------------------------
+
+
+#desktop-nav{
+    display: block;
+}
+
+#desktop-nav ul{
+    display:flex;
+   justify-content:space-around;
+}/* ONLY styling the <ul> inside of #desktop-nav*/
+
+
+nav{
+    height: 50px;
+    position: relative;
+    text-align: center;
+    margin-top: 90px;
+    display: block;
+}
+nav li{
+    text-align: center;
+    flex:1;
+    font-weight: bold;
+}
+nav ul{
+    display: flex;
+
+}
+
+a:link, a:active, a:visited {
+    text-align: center;
+    color: $v-color2;
+    display: block;
+    background-color:$v-color1;
+    transition: color .5s ease 0s;
+    padding: 10%;
+    cursor: pointer;
+    text-decoration: none;/*removes underline*/
+}
+a:hover {
+    background-color: $v-color2;
+    color:#fff;
+}
+//desktop nav styles end--------------------------
+
+p{
+    padding:2%;
+   
+}
+
+}
+
+
+
+
+
+
+@media screen and (min-width:768px){
+
+
+
+
+
+//Home Page----------------------------------------
+
+.about-me p{
+    margin:4%;
+}
+.about-me{
+    display:flex
+}
+.photo-of-me{
+    flex:2;
+    
+    max-width: 200px;
+    margin:2% 10%;
+    padding-bottom: 15%;
+}
+.logo{
+    max-width: 450px;
+    margin: 0 0 0 25%;
+}
+.feature-img{
+    display:grid;
+}
+.home-img-rococo{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.home-img-willi{
+    grid-column-start: 6;
+    grid-column-end: 9;
+}
+
+
+//footer------------------------------------------
+footer{
+    text-align: center;
+}
+footer p{
+    padding:0;
+    text-align: center;
+}
+footer h3{
+    margin-left: -20px;
+}
+footer h6{
+    padding-bottom:2%;
+}
+//End of Home Page----------------------------------
+
+
+
+//Resume-------------------------------------------
+.resume-list{
+    padding:6% 0;
+    line-height: 30px;
+}
+.resume{
+    background-color: $v-color2;
+    color: $v-color1;
+    text-align: center;
+}
+.resume-link{
+    padding:4% 0;
+}
+.resume-desktop{
+    padding:6%;
+}
+.resume-contact-info{
+    text-align: center;
+}
+
+
+//end of Resume------------------------------------
+
+
+
+
+
+//physical-artwork----------------------------------
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.artwork{
+    background-color: $v-color1;
+    color:$v-color2;
+    padding:3%;
+}
+.physical-par {
+    padding: 5% 10%;
+}
+
+
+
+.physical-img img{
+    margin: 0;
+    max-width: 100%;
+    height:auto;
+    vertical-align: middle;
+   display: inline-block;
+}
+
+.grid-wrapper > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-wrapper > div > img {
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.grid-wrapper{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+.grid-wrapper .wide{
+    grid-column: span 2;
+}
+.grid-wrapper .tall{
+    grid-row: span 2;
+}
+.grid-wrapper .big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+//photography grid
+
+.photo-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.container{
+    column-count: 3;
+    column-gap: 15px;
+    align-content:space-around;
+    max-width: 850px;
+}
+
+
+//end of physical artwork--------------------------
+
+
+
+
+//design work -------------------------------------------
+.design-p {
+    padding:4%;
+    border-bottom: none;
+}
+
+.design-img{
+    max-height: 300px;
+    max-width: 500px;
+    margin:20px 100px 20px 20px;
+    flex:2;
+}
+
+.design-img2{
+    max-height: 400px;
+    max-width: 300px;
+    margin:5px 100px 5px 5px;
+    flex:2;
+    width:100%;
+    margin:0 10%; 
+}
+
+.design-img3{
+    max-height: 300px;
+    max-width: 300px;
+    margin:5px 100px 5px 5px;
+    flex:2;
+    width:100%;
+    margin:0 10%; 
+}
+
+.design-p{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.design-work{
+    padding:25px;
+}
+.design-intro{
+   
+    padding:0 15% 15% 15%;
+}
+
+/////-------------------design work flex coding-------------
+.db-design{
+    display: flex;
+    border-bottom: $v-color2 6px solid;
+    padding-bottom: 10%;
+}
+
+
+
+.willi{
+    display: flex;
+    border-bottom: $v-color2 6px solid;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.dog-stop{
+    display: flex;
+    border-bottom: $v-color2 6px solid;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.weavegrid{
+    display: flex;
+    border-bottom: $v-color2 6px solid;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.mondo-llama{
+    display: flex;
+    border-bottom: $v-color2 6px solid;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.diemert-insurance{
+    display: flex;
+    border-bottom: $v-color2 6px solid;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.zero-motor{
+    display: flex;
+    border-bottom: $v-color2 6px solid;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.hutto-vet{
+    display: flex;
+    border-bottom: $v-color2 6px solid;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+.okemo{
+    display: flex;
+    border-bottom: $v-color2 6px solid;
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+
+
+//end of design work---------------------------------------
+
+
+
+}
