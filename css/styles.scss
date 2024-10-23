@@ -89,7 +89,8 @@ html{
 }
 .logo{
     max-width: 450px;
-    display: inline-block;
+    display: block;
+    margin-inline:auto;
 }
 
 
@@ -201,17 +202,29 @@ div h3{
 .design-img{
     max-width: 300px;
     width:100%;
-    margin:0 20%; 
+    display:block;
+    margin:0 auto; 
+    &:not(:first-of-type){
+        margin-top:4px;
+    }
 }
 .design-img2{
     max-width: 300px;
     width:100%;
-    margin:0 20%; 
+    display:block;
+    margin:0 auto; 
+    &:not(:first-of-type){
+        margin-top:4px;
+    }
 }
 .design-img3{
     max-width: 300px;
     width:100%;
-    margin:0 20%; 
+    display:block;
+    margin:0 auto; 
+    &:not(:first-of-type){
+        margin-top:4px;
+    } 
 }
 .design-p {
     padding:-500px 4%;
@@ -228,10 +241,15 @@ div h3{
 #harry-drawing{
     padding: 20% 0;
 }
+.grid-wrapper{
+    display: grid;
+    grid-gap: 10px;
+}
 .physical-img{
     max-width: 300px;
     width:100%;
-    margin:0 20%;
+    display:block;
+    margin:0 auto; 
     padding:10px 0;
 }
 .artwork{
@@ -242,7 +260,8 @@ div h3{
 .photo-img{
     max-width: 300px;
     width:100%;
-    margin:0 20%;
+    margin:0 auto;
+    display: block;
     padding:15% 0;
 }
 
@@ -343,10 +362,7 @@ p{
     margin:2% 10%;
     padding-bottom: 15%;
 }
-.logo{
-    max-width: 450px;
-    margin: 0 0 0 25%;
-}
+
 .feature-img{
     display:grid;
 }
@@ -423,12 +439,12 @@ footer h6{
 
 
 
-.physical-img img{
-    margin: 0;
+.physical-img{
     max-width: 100%;
     height:auto;
     vertical-align: middle;
    display: inline-block;
+   margin:0 20%;
 }
 
 .grid-wrapper > div {
@@ -462,7 +478,7 @@ footer h6{
 
 //photography grid
 
-.photo-img img {
+.photo-img {
     width: 100%;
     height: auto;
     display: block;
@@ -474,6 +490,7 @@ footer h6{
     column-gap: 15px;
     align-content:space-around;
     max-width: 850px;
+    margin:0 auto;
 }
 
 
@@ -491,6 +508,7 @@ footer h6{
 .design-img{
     max-height: 300px;
     max-width: 500px;
+    display: inline-block;
     margin:20px 100px 20px 20px;
     flex:2;
 }
@@ -501,6 +519,7 @@ footer h6{
     margin:5px 100px 5px 5px;
     flex:2;
     width:100%;
+    display: inline-block;
     margin:0 10%; 
 }
 
@@ -510,6 +529,7 @@ footer h6{
     margin:5px 100px 5px 5px;
     flex:2;
     width:100%;
+    display: inline-block;
     margin:0 10%; 
 }
 

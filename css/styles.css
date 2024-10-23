@@ -63,7 +63,8 @@ html {
 
 .logo {
     max-width: 450px;
-    display: inline-block;
+    display: block;
+    margin-inline: auto;
 }
 
 #desktop-nav {
@@ -170,19 +171,31 @@ div h3 {
 .design-img {
     max-width: 300px;
     width: 100%;
-    margin: 0 20%;
+    display: block;
+    margin: 0 auto;
+}
+.design-img:not(:first-of-type) {
+    margin-top: 4px;
 }
 
 .design-img2 {
     max-width: 300px;
     width: 100%;
-    margin: 0 20%;
+    display: block;
+    margin: 0 auto;
+}
+.design-img2:not(:first-of-type) {
+    margin-top: 4px;
 }
 
 .design-img3 {
     max-width: 300px;
     width: 100%;
-    margin: 0 20%;
+    display: block;
+    margin: 0 auto;
+}
+.design-img3:not(:first-of-type) {
+    margin-top: 4px;
 }
 
 .design-p {
@@ -195,10 +208,16 @@ div h3 {
     padding: 20% 0;
 }
 
+.grid-wrapper {
+    display: grid;
+    grid-gap: 10px;
+}
+
 .physical-img {
     max-width: 300px;
     width: 100%;
-    margin: 0 20%;
+    display: block;
+    margin: 0 auto;
     padding: 10px 0;
 }
 
@@ -211,7 +230,8 @@ div h3 {
 .photo-img {
     max-width: 300px;
     width: 100%;
-    margin: 0 20%;
+    margin: 0 auto;
+    display: block;
     padding: 15% 0;
 }
 
@@ -275,10 +295,6 @@ div h3 {
         margin: 2% 10%;
         padding-bottom: 15%;
     }
-    .logo {
-        max-width: 450px;
-        margin: 0 0 0 25%;
-    }
     .feature-img {
         display: grid;
     }
@@ -334,12 +350,12 @@ div h3 {
     .physical-par {
         padding: 5% 10%;
     }
-    .physical-img img {
-        margin: 0;
+    .physical-img {
         max-width: 100%;
         height: auto;
         vertical-align: middle;
         display: inline-block;
+        margin: 0 20%;
     }
     .grid-wrapper > div {
         display: flex;
@@ -370,7 +386,7 @@ div h3 {
         grid-column: span 2;
         grid-row: span 2;
     }
-    .photo-img img {
+    .photo-img {
         width: 100%;
         height: auto;
         display: block;
@@ -384,6 +400,7 @@ div h3 {
              column-gap: 15px;
         align-content: space-around;
         max-width: 850px;
+        margin: 0 auto;
     }
     .design-p {
         padding: 4%;
@@ -392,6 +409,7 @@ div h3 {
     .design-img {
         max-height: 300px;
         max-width: 500px;
+        display: inline-block;
         margin: 20px 100px 20px 20px;
         flex: 2;
     }
@@ -401,6 +419,7 @@ div h3 {
         margin: 5px 100px 5px 5px;
         flex: 2;
         width: 100%;
+        display: inline-block;
         margin: 0 10%;
     }
     .design-img3 {
@@ -409,6 +428,7 @@ div h3 {
         margin: 5px 100px 5px 5px;
         flex: 2;
         width: 100%;
+        display: inline-block;
         margin: 0 10%;
     }
     .design-p {
