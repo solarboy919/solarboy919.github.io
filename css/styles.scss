@@ -260,8 +260,7 @@ div h3{
 .photo-img{
     max-width: 300px;
     width:100%;
-    margin:0 auto;
-    display: block;
+    margin:0 20%;
     padding:15% 0;
 }
 
@@ -478,7 +477,7 @@ footer h6{
 
 //photography grid
 
-.photo-img {
+.photo-img img {
     width: 100%;
     height: auto;
     display: block;
@@ -490,7 +489,6 @@ footer h6{
     column-gap: 15px;
     align-content:space-around;
     max-width: 850px;
-    margin:0 auto;
 }
 
 
